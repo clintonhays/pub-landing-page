@@ -338,7 +338,7 @@ template {
   display: none;
 }
 
-.overlay {
+#overlay {
   position: fixed;
   height: 100%;
   width: 100%;
