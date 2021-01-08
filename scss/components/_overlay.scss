@@ -1,0 +1,27 @@
+//
+// Age Verification Overlay
+//
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.ageCheck {
+  width: 70%;
+  background-color: black;
+  color: white;
+  padding: 2em;
+
+  .ageradioGroup {
+    display: flex;
+    justify-content: space-around;
+  }
+}
