@@ -1,0 +1,44 @@
+//
+// Navigation Menu
+//
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  // hide menu by default
+  transform: translateY(-100%);
+  // animation
+  transition: transform 0.3s ease;
+}
+
+.showNav {
+  transform: translateY(0%);
+}
+
+//
+// Nav Link Container
+//
+
+.navContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .navList {
+    list-style-type: none;
+    padding-left: 0;
+
+    .navItem a {
+      font-size: 2em;
+      color: white;
+      text-decoration: none;
+      line-height: 2.5em;
+    }
+  }
+}

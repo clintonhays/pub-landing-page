@@ -339,12 +339,13 @@ template {
 }
 
 #overlay {
-  position: fixed;
   height: 100%;
   width: 100%;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1001;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,8 +359,62 @@ template {
   padding: 2em;
 }
 
-.ageCheck .ageradioGroup {
+.ageCheck .buttonGroup {
   display: flex;
   justify-content: space-around;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.showNav {
+  transform: translateY(0%);
+}
+
+.navContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navContainer .navList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navContainer .navList .navItem a {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+  line-height: 2.5em;
+}
+
+.hamburger {
+  background: url(../../img/icons8-menu.svg);
+  background-size: 100%;
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.hamburgerClose {
+  background: url(../../img/icons8-delete.svg);
+  background-size: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

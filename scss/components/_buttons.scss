@@ -1,3 +1,28 @@
 //
-// Button
+// Age Verification Buttons
 //
+
+//
+// Hamburger Button
+//
+
+// Style hamburger menu button
+.hamburger {
+  background: url(../../img/icons8-menu.svg);
+  background-size: 100%;
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+// Show close button for hamburger menu
+.hamburgerClose {
+  background: url(../../img/icons8-delete.svg);
+  background-size: 100%;
+}
