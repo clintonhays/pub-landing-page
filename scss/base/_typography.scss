@@ -3,6 +3,19 @@
 //
 
 //
+// Header
+//
+
+.bannerTitle {
+  font-size: 3em;
+}
+
+.bannerCopy {
+  font-size: 1.25em;
+  line-height: 1.6em;
+}
+
+//
 // Section Titles
 //
 
@@ -10,4 +23,15 @@
   text-align: center;
   font-family: $title;
   font-size: 2em;
+}
+
+//
+// Section Copy
+//
+
+.copy {
+  text-align: center;
+  line-height: 1.6em;
+  width: 90%;
+  margin: 0 auto;
 }

@@ -388,13 +388,55 @@ header {
   padding-top: 2em;
   margin: 0;
   margin-bottom: 0.5em;
-  font-size: 3em;
 }
 
 .bannerContent .bannerCopy {
   padding-bottom: 5em;
   margin: 0 auto;
   width: 70%;
+}
+
+#about,
+#menu,
+#contact {
+  margin-top: 4em;
+}
+
+#contact {
+  margin-bottom: 4em;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 2px solid black;
+  font-size: 0.75em;
+}
+
+.footerContainer .techContainer {
+  width: 55%;
+}
+
+.footerContainer .techContainer p {
+  margin: 0;
+  margin-bottom: 0.25em;
+}
+
+.footerContainer .techContainer p :last-child {
+  margin-bottom: 5em;
+}
+
+.bannerTitle {
+  font-size: 3em;
+}
+
+.bannerCopy {
   font-size: 1.25em;
   line-height: 1.6em;
 }
@@ -405,6 +447,13 @@ header {
   font-size: 2em;
 }
 
+.copy {
+  text-align: center;
+  line-height: 1.6em;
+  width: 90%;
+  margin: 0 auto;
+}
+
 #overlay {
   height: 100%;
   width: 100%;
@@ -412,7 +461,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1001;
+  z-index: 1002;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,6 +478,10 @@ header {
 .ageCheck .buttonGroup {
   display: flex;
   justify-content: space-around;
+}
+
+.noScroll {
+  position: fixed;
 }
 
 .navigation {
@@ -467,6 +520,15 @@ header {
   line-height: 2.5em;
 }
 
+.ageButton {
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 64px;
+}
+
 .hamburger {
   background: url(../../img/icons8-menu.svg);
   background-size: 100%;
@@ -486,12 +548,24 @@ header {
   background-size: 100%;
 }
 
-.ourMenuButton {
+.menuButtonLg {
   background-color: white;
   border: none;
   outline: none;
   border-radius: 10px;
   padding: 0.5em;
   margin-top: 1.5em;
+  cursor: pointer;
+}
+
+.menuButtonSm {
+  background-color: transparent;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 5px;
+  width: 128px;
+  padding: 0.5em;
+  font-size: 1.25em;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

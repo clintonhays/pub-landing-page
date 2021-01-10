@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <title>The Pub</title>
   </head>
-  <body>
-    <!-- <div id="overlay">
+  <body class="noScroll">
+    <div id="overlay">
       <div class="ageCheck">
         <h1>Are you 21 years of age or older?</h1>
         <div class="buttonGroup">
-          <button class="yes">Yes</button>
-          <button class="no">No</button>
+          <button class="yes ageButton">Yes</button>
+          <button class="no ageButton">No</button>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <button class="hamburger"></button>
     <nav class="navigation">
@@ -35,7 +35,7 @@
           <h1 class="bannerTitle">Our Pub</h1>
           <p class="bannerCopy">
             The city's best place to find <span>brews</span>, <span>food</span>, and a <span>good time</span>!
-            <button class="ourMenuButton">View Our Menu ></button>
+            <button class="menuButtonLg">View Our Menu</button>
           </p>
         </div>
       </div>
@@ -44,7 +44,7 @@
     <section id="about">
       <div class="aboutContainer">
         <h2 class="about title">Our Story</h2>
-        <p>
+        <p class="copy">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quis ipsam eligendi alias. Nisi nihil esse
           dolore eligendi vero dicta, maxime totam tempore nesciunt quidem minus voluptatum, rerum accusantium omnis.
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -52,29 +52,42 @@
       </div>
     </section>
 
-    <!-- <section id="menu">
+    <section id="menu">
       <div class="menuContainer">
         <h2 class="menu title">Our Menu</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quis ipsam eligendi alias. Nisi nihil esse
-          dolore eligendi vero dicta, maxime totam tempore nesciunt quidem minus voluptatum, rerum accusantium omnis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat, voluptatum minima totam mollitia quas
-          nisi animi eius, voluptatibus nihil vero adipisci enim id, sequi blanditiis eveniet non porro temporibus.
-        </p>
+        <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quis ipsam eligendi alias.</p>
+        <div class="buttonContainer">
+          <button class="menuButtonSm">Food</button>
+          <button class="menuButtonSm">Drinks</button>
+        </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="contactContainer">
         <h2 class="contact title">Our Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quis ipsam eligendi alias. Nisi nihil esse
-          dolore eligendi vero dicta, maxime totam tempore nesciunt quidem minus voluptatum, rerum accusantium omnis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat, voluptatum minima totam mollitia quas
-          nisi animi eius, voluptatibus nihil vero adipisci enim id, sequi blanditiis eveniet non porro temporibus.
-        </p>
+        <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="buttonContainer">
+          <button class="menuButtonSm">Reservations</button>
+          <button class="menuButtonSm">Events</button>
+        </div>
       </div>
-    </section> -->
+    </section>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="techContainer">
+          <h3>Made by Clinton Hays with:</h3>
+          <p>HTML5</p>
+          <p>SASS</p>
+          <p>JavaScript</p>
+        </div>
+        <div class="linkContainer">
+          <h3>See more at</h3>
+          <a href="https://www.crhdev.com">www.crhdev.com</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="/js/app.js"></script>
   </body>

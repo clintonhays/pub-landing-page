@@ -32,13 +32,58 @@ header {
     padding-top: 2em;
     margin: 0;
     margin-bottom: 0.5em;
-    font-size: 3em;
   }
   .bannerCopy {
     padding-bottom: 5em;
     margin: 0 auto;
     width: 70%;
-    font-size: 1.25em;
-    line-height: 1.6em;
+  }
+}
+
+//
+// Section Spacing
+//
+
+#about,
+#menu,
+#contact {
+  margin-top: 4em;
+}
+
+#contact {
+  margin-bottom: 4em;
+}
+
+//
+// Button Spacing
+//
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+//
+// Footer
+//
+
+.footerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 2px solid black;
+  font-size: 0.75em;
+
+  .techContainer {
+    width: 55%;
+
+    p {
+      margin: 0;
+      margin-bottom: 0.25em;
+
+      :last-child {
+        margin-bottom: 5em;
+      }
+    }
   }
 }
