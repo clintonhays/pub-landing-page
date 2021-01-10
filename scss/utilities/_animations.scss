@@ -1,0 +1,22 @@
+//
+// Carousel
+//
+
+@keyframes bgFade {
+  0%,
+  100% {
+    background-image: url("../../img/cocktail.jpg");
+  }
+  20% {
+    background-image: url("../../img/cocktail2.jpg");
+  }
+  40% {
+    background-image: url("../../img/cocktail3.jpg");
+  }
+  60% {
+    background-image: url("../../img/cocktail4.jpg");
+  }
+  80% {
+    background-image: url("../../img/cocktail5.jpg");
+  }
+}

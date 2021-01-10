@@ -1,4 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?Soon&family=Creepster&family=Exo:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@keyframes bgFade {
+  0%,
+  100% {
+    background-image: url("../../img/cocktail.jpg");
+  }
+  20% {
+    background-image: url("../../img/cocktail2.jpg");
+  }
+  40% {
+    background-image: url("../../img/cocktail3.jpg");
+  }
+  60% {
+    background-image: url("../../img/cocktail4.jpg");
+  }
+  80% {
+    background-image: url("../../img/cocktail5.jpg");
+  }
+}
+
+body {
+  background-color: white;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -338,6 +361,50 @@ template {
   display: none;
 }
 
+header {
+  z-index: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: bgFade 40s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+  background-image: url("../../img/cocktail.jpg");
+}
+
+.bannerContent {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+}
+
+.bannerContent .bannerTitle {
+  padding-top: 2em;
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+}
+
+.bannerContent .bannerCopy {
+  padding-bottom: 5em;
+  margin: 0 auto;
+  width: 70%;
+  font-size: 1.25em;
+  line-height: 1.6em;
+}
+
+.title {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 2em;
+}
+
 #overlay {
   height: 100%;
   width: 100%;
@@ -376,6 +443,7 @@ template {
 }
 
 .showNav {
+  z-index: 1000;
   transform: translateY(0%);
 }
 
@@ -407,7 +475,7 @@ template {
   width: 48px;
   height: 48px;
   position: absolute;
-  z-index: 1000;
+  z-index: 1001;
   top: 10px;
   right: 10px;
   cursor: pointer;
@@ -416,5 +484,14 @@ template {
 .hamburgerClose {
   background: url(../../img/icons8-delete.svg);
   background-size: 100%;
+}
+
+.ourMenuButton {
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5em;
+  margin-top: 1.5em;
 }
 /*# sourceMappingURL=styles.css.map */
