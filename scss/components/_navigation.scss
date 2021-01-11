@@ -3,12 +3,12 @@
 //
 
 .navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   background-color: black;
-  width: 100vw;
-  height: 100vh;
   // hide menu by default
   transform: translateY(-100%);
   // animation
